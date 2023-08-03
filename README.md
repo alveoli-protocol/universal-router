@@ -242,3 +242,15 @@ forge script --broadcast \
 script/deployParameters/DeployUniversalRouter.s.sol:DeployUniversalRouter \
 <pathToJSON>
 ```
+
+## Klaytn
+
+```bash
+forge script --broadcast \
+--rpc-url https://public-en-baobab.klaytn.net \
+--private-key <pk> \
+--sig 'run()' \
+script/deployParameters/DeployBaobab.s.sol:DeployBaobab -g 200
+```
+
+baobab: `0x84f2295Fbd13C4619bBB7F6F360894385A67b3fF`
